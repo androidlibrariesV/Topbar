@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorSecondary">#F1EBF3</color> <!-- a light gray -->
+    <color name="colorPrimary">#904886</color> <!-- a deep purple -->
+    <color name="colorPrimaryVariant">#8F4886</color> <!-- a darker purple -->
+    <color name="teal_200">#80DEEA</color> <!-- a light teal -->
+    <color name="teal_700">#0097A7</color> <!-- a darker teal -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>

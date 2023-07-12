@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:navGraph="@navigation/nav"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCreateTrip"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Create\nTrip"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="4dp"
+        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@color/colorSecondary"
+        app:cornerRadius="100dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonPlus"
+        android:layout_margin="22dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCreateDiary"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="New\nDiary"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="4dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@color/colorSecondary"
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toStartOf="@id/buttonPlus"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar"
+        android:layout_margin="24dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonPlus"
+        android:layout_width="70dp"
+        android:layout_height="78dp"
+        android:gravity="center"
+        android:text="+"
+        android:paddingTop="-4dp"
+        android:textSize="40dp"
+        android:elevation="10dp"
+        app:elevation="10dp"
+        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@color/colorSecondary"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="4dp"
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar"
+        android:layout_margin="24dp"/>
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:iconMargin="8dp"
+        app:iconSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:backgroundColor="@color/colorPrimary"
+
+        app:menu="@menu/bottom_nav"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:text="Filter Trips and  Diaries"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:layout_marginRight="20dp"
+        android:text="Location Keyword"/>
+    <EditText
+        android:id="@+id/tvLocation"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:hint="Eg. Just type 'delhi' to search redfort, Delhi or Phonix Mall, Delhi"
+        android:onClick="onStartDateClick"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="20dp"
+            android:text="Before"/>
+        <EditText
+            android:id="@+id/tvBefore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:hint="Select Date"
+            android:focusable="false"
+            android:onClick="onStartDateClick"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:text="After   "/>
+
+        <EditText
+            android:id="@+id/tvAfter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:hint="Select Date"
+            android:onClick="onStartDateClick"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:text="On       "/>
+        <EditText
+            android:id="@+id/tvOn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:hint="Select Date"
+            android:focusable="false"
+            android:onClick="onStartDateClick"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelButton"
+
+            app:strokeColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            app:cornerRadius="40dp"
+            android:backgroundTint="@color/colorSecondary"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Cancel"
+            android:textAllCaps="false"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/FilterButton"
+            app:cornerRadius="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textSize="12dp"
+            android:layout_gravity="center"
+            android:text="Apply Filter"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+

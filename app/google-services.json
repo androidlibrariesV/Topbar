@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1096639908060",
+    "project_id": "trip-stories",
+    "storage_bucket": "trip-stories.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096639908060:android:2b03f420fdc0b4e372cc19",
+        "android_client_info": {
+          "package_name": "abhishek.tripstory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096639908060-u2d035ls0ro8q1l39f5lj7nehop9qif2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "abhishek.tripstory",
+            "certificate_hash": "a107dc52ddb735a238dfa42e15747a2bf9004c2a"
+          }
+        },
+        {
+          "client_id": "1096639908060-ksfqb2gs9p43thhpu354mtp4lrqonpk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM-EFCTMTAUslltvxNct8tuyfIJr-izvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096639908060-ksfqb2gs9p43thhpu354mtp4lrqonpk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
